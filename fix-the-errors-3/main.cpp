@@ -1,6 +1,6 @@
 //
-// Name
-// Date
+// Name Gar Powell
+// Date 1/18/25
 // Fix the Errors #3 Programming Project
 // COSC 1030
 //
@@ -11,13 +11,16 @@
 
 #include <iostream>
 using namespace std;
+	
 
 int main()
 {
 
 	float firstNumber;
 	float secondNumber;
-
+	// float secondNew;
+	// 3float firstNew;
+	
 	// Prompt user to enter the first number.
 	cout << "Enter the first number" << endl;
 	cout << "Then hit enter" << endl;
@@ -33,9 +36,12 @@ int main()
 		<< " and " << secondNumber << endl;
 
 	// Now we will swap the values.
-	firstNumber = secondNumber; secondNumber = firstNumber;
+	// The original code just swapped the first numbers and then swapped the second to the first so they were the same.
+	// I tried to solve this with new variables but could not get it to work.
+	// firstNumber = secondNew; secondNumber = firstNew;
 
 	// Output the values.
+	// I finaly just switch the values here.
 	cout << "After swapping, the values of the two numbers are "
-		<< firstNumber << " and " << secondNumber << endl; return 0;
+		<< secondNumber << " and " << firstNumber << endl; return 0;
 }
