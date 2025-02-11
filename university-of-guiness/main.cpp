@@ -1,6 +1,6 @@
 //
-// Name
-// Date
+// Name Gar Powell
+// Date 2/10/25
 // University of Guiness Programming Project
 // COSC 1030
 //
