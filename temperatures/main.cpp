@@ -13,10 +13,10 @@
 using namespace std;
 
 // Functions
-void getTemperatures(int[], int);
-double averageTemperature(int[], int);
-int maxTemperature(int[], int);
-int minTemperature(int[], int);
+void getTemperatures(double[], int);
+double averageTemperature(double[], int);
+int maxTemperature(double[], int);
+int minTemperature(double[], int);
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
         }
 
     // Declare the array type.
-    typedef int tempArray[SIZE];
+    typedef double tempArray[SIZE];
 
     // Initialize the array for temperatures.
     tempArray temperatures;
@@ -60,7 +60,7 @@ int main()
 }
 
 // Function to get the temperatures.
-void getTemperatures(int temperature[], int SIZE)
+void getTemperatures(double temperature[], int SIZE)
 {
     cout << "Enter the amount of sales for each type of salsa sold for the past month.\n";
     for (int index = 0; index < SIZE; index++)
@@ -73,7 +73,7 @@ void getTemperatures(int temperature[], int SIZE)
 }
 
 // Average temperatures function.
-double averageTemperature(int temperatures[], int SIZE)
+double averageTemperature(double temperatures[], int SIZE)
 {
     double total_temperatures = 0;
     double average_temperatures = 0;
@@ -86,7 +86,7 @@ double averageTemperature(int temperatures[], int SIZE)
 }
 
 // Max temperature function.
-int maxTemperature(int temperatures[], int SIZE)
+int maxTemperature(double temperatures[], int SIZE)
 {
     int max_index = 0;
     for (int index = 1; index < SIZE; index++)
@@ -97,7 +97,7 @@ int maxTemperature(int temperatures[], int SIZE)
 }
 
 // Min temperature function.
-int minTemperature(int temperatures[], int SIZE)
+int minTemperature(double temperatures[], int SIZE)
 {
     int min_index = 0;
     for (int index = 1; index < SIZE; index++)
