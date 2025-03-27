@@ -21,7 +21,7 @@ int main()
 {
     // Variable declarations
     int serchNumber = 0; // Enter the number you want to search for.
-    const int SIZE = 25;
+    const int SIZE = 25; // size of the array
     int linerComparisons = 0;
     int binaryComparisons = 0;
     bool notFound = false;
@@ -39,7 +39,8 @@ int main()
     linerComparisons = linearSearch(integerArray, SIZE, serchNumber);
     notFound = primeSearch(integerArray, SIZE, serchNumber);
     binaryComparisons = binarySearch(integerArray, SIZE, serchNumber);
-
+    
+    // Print if the number is prime and the number of comparisons for each function.
     if (notFound == false)
         {
             cout << serchNumber << " is not prime."<< endl;
@@ -55,7 +56,7 @@ int main()
 
     return 0;
 }  
-    
+// Linear search function for the number. Returns the index for the number of comparisons.   
 int linearSearch(const int arr[], int size, int value)
 {
     int index = 0;
@@ -73,7 +74,7 @@ int linearSearch(const int arr[], int size, int value)
     }
     return index;
 }
-
+// Linear search function for the number. Rerurn if it is found or not.
 bool primeSearch(const int arr[], int size, int value)
 {
     int index = 0;
@@ -91,7 +92,7 @@ bool primeSearch(const int arr[], int size, int value)
     }
     return found;
 }
-
+// Binary search function for the number. Returns the index for the number of comparisons.  
 int binarySearch(const int array[], int numElems, int value)
 {
     int first = 0;
@@ -118,7 +119,7 @@ int binarySearch(const int array[], int numElems, int value)
     }
     return count;
 }
-
+// Puts the array in order.
 void bubbleSort(int array[], int size)
 {
     int maxElement = 0;
