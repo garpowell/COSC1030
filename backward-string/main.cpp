@@ -25,7 +25,6 @@ int main()
 
     // Call the function to print the string backward.
     sortLine(line);
-
     return 0;
 }
 
