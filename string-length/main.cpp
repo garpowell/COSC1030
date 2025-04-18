@@ -14,6 +14,7 @@ int countChar(char *);
 
 int main()
 {
+    
     // Initialize variables.
     const int SIZE = 80;
     char line[SIZE];
