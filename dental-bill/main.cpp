@@ -54,7 +54,7 @@ double cost(double &service, double &testFees)
     cout << "What is the service charge for this procedure? \n";
     cin >> service;
 
-    cout << "What is the test fees for this procedure? \n";
+    cout << "What are the test fees for this procedure? \n";
     cin >> testFees;
 
     return (service + testFees);
@@ -65,7 +65,7 @@ float cost(double &service, double &testFees, float &medicine)
     cout << "What is the service charge for this procedure? \n";
     cin >> service;
 
-    cout << "What is the test fees for this procedure? \n";
+    cout << "What are the test fees for this procedure? \n";
     cin >> testFees;
 
     cout << "What is the medicine cost for this procedure? \n";
